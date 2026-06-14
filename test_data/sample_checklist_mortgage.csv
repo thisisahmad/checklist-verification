@@ -1,0 +1,8 @@
+id,item_text,category,weight,rule_type,rule_spec,confidence_threshold
+ITEM-001,Applicant full name present,KYC,1,boolean,"{\"keyword\": \"Applicant Name\"}",0.75
+ITEM-002,Applicant age must be >= 21,Eligibility,1,threshold,"{\"field\": \"age\", \"operator\": \">=\", \"value\": 21}",0.9
+ITEM-003,Monthly income must be >= 4000,Eligibility,1,threshold,"{\"field\": \"monthly_income\", \"operator\": \">=\", \"value\": 4000}",0.85
+ITEM-004,Employment status present,Eligibility,1,boolean,"{\"keyword\": \"Employment Status\"}",0.75
+ITEM-005,LTV must be <= 0.80,Risk,1,threshold,"{\"field\": \"ltv\", \"operator\": \"<=\", \"value\": 0.80}",0.9
+ITEM-006,Property address present,Documentation,1,boolean,"{\"keyword\": \"Property Address\"}",0.75
+ITEM-007,ID number present,KYC,1,boolean,"{\"keyword\": \"ID Number\"}",0.75

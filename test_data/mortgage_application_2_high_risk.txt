@@ -1,0 +1,7 @@
+Applicant Name: Jane Q. Public
+Age: 19
+Monthly Income: 3500
+Employment Status: Part-time
+Property Address: 45 Market Ave, Metropolis
+LTV: 0.90
+Notes: Applicant is a student worker; ID number not provided.

@@ -1,0 +1,9 @@
+Applicant Name: Robert Lee
+Age: 36
+Monthly Income: 4100
+Employment Status: Contract
+ID Number: RL4455667
+Property Value: 280000
+Loan Amount: 238000
+LTV: 0.85
+Notes: Property address is missing from the submitted file. LTV is above the preferred policy threshold.

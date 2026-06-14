@@ -1,0 +1,30 @@
+.env
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local secrets and generated key material
+*.pem
+credentials*.json
+secrets*.json
+test.py
+
+# Generated reports and local exports
+*_report.json
+*_verification.csv
+compliance_verification_report.json
+compliance_verification_run_log.txt
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

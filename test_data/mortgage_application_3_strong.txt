@@ -1,0 +1,10 @@
+Applicant Name: Maria S. Khan
+Age: 41
+Monthly Income: 7200
+Employment Status: Self-employed
+Property Address: 88 Lakeview Drive, Austin
+ID Number: MK8899001
+Property Value: 450000
+Loan Amount: 315000
+LTV: 0.70
+Notes: Applicant provided bank statements and business registration. Income and identity evidence appear complete.

@@ -1,0 +1,7 @@
+Applicant Name: A. Smith
+Age: 20
+Monthly Income: 2900
+Property Value: 250000
+Loan Amount: 230000
+LTV: 0.92
+Notes: Employment status, property address, and ID number were not included in the application package.

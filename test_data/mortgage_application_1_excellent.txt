@@ -1,0 +1,10 @@
+Applicant Name: John A. Doe
+Age: 29
+Monthly Income: 5000
+Employment Status: Full-time
+Property Address: 123 Main St, Springfield
+ID Number: AB1234567
+Property Value: 300000
+Loan Amount: 240000
+LTV: 0.80
+Notes: Full legal name appears as John A. Doe. All core eligibility evidence is present.
