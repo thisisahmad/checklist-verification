@@ -1,8 +1,8 @@
 # Checklist Verification Control Room
 
-A portfolio-grade compliance verification system for validating policy checklists against supporting evidence documents. The app parses uploaded documents, applies structured checklist rules, calculates weighted compliance scores, optionally adds OpenAI-based audit reasoning, and exports traceable reports with run logs.
+A compliance verification system for validating policy checklists against supporting evidence documents. The app parses uploaded documents, applies structured checklist rules, calculates weighted compliance scores, optionally adds OpenAI-based audit reasoning, and exports traceable reports with run logs.
 
-## Overview
+## 🔎 Overview
 
 Checklist Verification Control Room helps reviewers answer one core question:
 
@@ -10,20 +10,20 @@ Checklist Verification Control Room helps reviewers answer one core question:
 
 The system supports:
 
-- Rule-based verification for deterministic checks
-- Weighted scoring by checklist item importance
-- PASS, PARTIAL, and FAIL outcomes
-- Category-level analytics for KYC, eligibility, risk, documentation, and more
-- Optional OpenAI reasoning for audit-style explanations
-- Run logs shown in the frontend and terminal
-- Downloadable CSV, JSON, and log exports
-- Test data for quick demos and portfolio walkthroughs
+- ✅ Rule-based verification for deterministic checks
+- 📊 Weighted scoring by checklist item importance
+- 🟢 PASS, 🟡 PARTIAL, and 🔴 FAIL outcomes
+- 🧭 Category-level analytics for KYC, eligibility, risk, documentation, and more
+- 🤖 Optional OpenAI reasoning for audit-style explanations
+- 🧾 Run logs shown in the frontend and terminal
+- 📦 Downloadable CSV, JSON, and log exports
+- 🧪 Test data for quick demos
 
-## Key Features
+## ✨ Key Features
 
-### Premium Streamlit Dashboard
+### 🖥️ Streamlit Dashboard
 
-- Dark enterprise-style interface
+- Dark interface
 - Sidebar-based verification package upload
 - Executive summary metrics
 - Document scorecards
@@ -34,7 +34,7 @@ The system supports:
 - Run logs tab
 - Export center
 
-### Rule Engine
+### ⚙️ Rule Engine
 
 The rule engine supports:
 
@@ -53,7 +53,7 @@ Each rule returns:
 - Reason code
 - Optional LLM reasoning fields
 
-### OpenAI Reasoning
+### 🤖 OpenAI Reasoning
 
 When enabled, the app sends checklist rules and document excerpts to OpenAI for audit-style reasoning. The default model is `gpt-4o`, with `gpt-4.1` and `gpt-4o-mini` also available.
 
@@ -68,7 +68,7 @@ The LLM returns structured JSON:
 
 If OpenAI fails or model access is unavailable, the system does not force the compliance score to zero. It falls back to the rule-based score and records the LLM error in logs and exports.
 
-### Traceable Logs
+### 🧾 Traceable Logs
 
 Logs are displayed in:
 
@@ -88,7 +88,7 @@ Logged events include:
 - Per-document scores
 - Overall score and risk rating
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 .
@@ -109,7 +109,7 @@ Logged events include:
 └── README.md
 ```
 
-## How It Works
+## 🧠 How It Works
 
 ```mermaid
 flowchart LR
@@ -125,7 +125,7 @@ flowchart LR
     F --> J[Run Logs]
 ```
 
-## Scoring Model
+## 📊 Scoring Model
 
 Each checklist item produces a score:
 
@@ -149,7 +149,7 @@ Risk ratings:
 | 50-64 | High Risk |
 | 0-49 | Critical |
 
-## Getting Started
+## 🚀 Getting Started
 
 ### 1. Clone the repository
 
@@ -210,7 +210,7 @@ Open the local URL shown in the terminal, usually:
 http://localhost:8501
 ```
 
-## Demo Workflow
+## 🧪 Demo Workflow
 
 Use the included test data:
 
@@ -236,7 +236,7 @@ Expected sample behavior:
 | `mortgage_application_4_needs_review.txt` | Needs Review |
 | `mortgage_application_5_critical.txt` | Critical |
 
-## Checklist Format
+## 📋 Checklist Format
 
 Example CSV:
 
@@ -259,7 +259,7 @@ Required / supported columns:
 | `rule_spec` | JSON rule definition |
 | `confidence_threshold` | Minimum confidence for full pass |
 
-## Evidence Document Format
+## 📄 Evidence Document Format
 
 Text files work best when fields use `Key: Value` lines:
 
@@ -280,7 +280,7 @@ Monthly Income -> monthly_income
 ID Number -> id_number
 ```
 
-## PDF and OCR Support
+## 🔍 PDF and OCR Support
 
 The parser can extract text from PDFs using `pdfplumber`. If a PDF has little extractable text, it can attempt OCR with `pdf2image` and `pytesseract`.
 
@@ -291,7 +291,7 @@ For OCR on Windows, you may also need:
 
 TXT files do not require OCR dependencies.
 
-## Exported Reports
+## 📦 Exported Reports
 
 The app can export:
 
@@ -312,7 +312,7 @@ The complete JSON includes:
 - Item-level findings
 - LLM explanations and recommendations
 
-## Security Notes
+## 🔐 Security Notes
 
 This repository intentionally ignores:
 
@@ -325,7 +325,7 @@ This repository intentionally ignores:
 
 Never commit real API keys, private keys, or customer documents.
 
-## Troubleshooting
+## 🛠️ Troubleshooting
 
 ### Streamlit command not found
 
@@ -356,18 +356,18 @@ Check:
 - The Run Logs tab
 - Whether the document uses `Key: Value` lines
 
-## Technology Stack
+## 🧰 Technology Stack
 
-- Python
-- Streamlit
-- pandas
-- spaCy
-- pdfplumber
-- pytesseract
-- OpenAI Python SDK
-- scikit-learn / fuzzy matching utilities
+- 🐍 Python
+- 🎈 Streamlit
+- 🐼 pandas
+- 🧠 spaCy
+- 📄 pdfplumber
+- 🔎 pytesseract
+- 🤖 OpenAI Python SDK
+- 📐 scikit-learn / fuzzy matching utilities
 
-## Repository
+## 🔗 Repository
 
 GitHub: [thisisahmad/checlist-verification](https://github.com/thisisahmad/checlist-verification)
 
