@@ -1,5 +1,11 @@
 # Checklist Verification Control Room
 
+![version](https://img.shields.io/badge/version-1.0.0-blue)
+![python](https://img.shields.io/badge/python-3.10%2B-brightgreen)
+![ui](https://img.shields.io/badge/ui-Streamlit-red)
+![ai](https://img.shields.io/badge/ai-OpenAI-black)
+![rag](https://img.shields.io/badge/RAG-FAISS-purple)
+
 A compliance verification system for validating policy checklists against supporting evidence documents. The app parses uploaded documents, applies structured checklist rules, calculates weighted compliance scores, optionally adds OpenAI-based audit reasoning, and exports traceable reports with run logs.
 
 ## 🔎 Overview
