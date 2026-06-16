@@ -8,6 +8,16 @@
 
 A compliance verification system for validating policy checklists against supporting evidence documents. The app parses uploaded documents, applies structured checklist rules, calculates weighted compliance scores, optionally adds OpenAI-based audit reasoning, and exports traceable reports with run logs.
 
+## 📸 Screenshots
+
+### Dashboard Home
+
+![Dashboard home screen](docs/screenshots/dashboard-home.png)
+
+### Verification Results
+
+![Verification results and document review](docs/screenshots/verification-results.png)
+
 ## 🔎 Overview
 
 Checklist Verification Control Room helps reviewers answer one core question:
